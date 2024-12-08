@@ -1,0 +1,7 @@
+﻿@model IEnumerable<lab9.Models.Product>
+
+<h1>Product List</h1>
+@await Component.InvokeAsync("ProductTable", Model)
+
+<h1>Current Weather</h1>
+@await Component.InvokeAsync("Weather", ViewData["City"])
